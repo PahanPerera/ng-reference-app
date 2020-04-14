@@ -1,0 +1,4 @@
+<ul *ngIf="todoList">
+    <li *ngFor="let todo of todoList" [ngClass]="{'text-green': todo.isCompleted}" (click)="todoClickedEvent(todo)">
+        {{todo.title}}</li>
+</ul>

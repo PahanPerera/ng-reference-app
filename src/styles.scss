@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+html, body {
+    font-family: 'Gochi Hand', cursive;
+}
+
+.title {
+    border-bottom: 1px dashed black;
+}
+
+.strike-through{
+    text-decoration: line-through;
+}
+
+ul {
+    li {
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+.text-gray{
+    color: gray;
+}
+
+.text-indigo {
+    color: indigo;
+}
+
+.text-green {
+    color: green;
+}
+
+main {
+    margin: 20px 5%;
+    display: flex;
+    & > * {
+        flex: 1;
+        margin: 20px;
+    }
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 1px solid gray;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 16px;
+    box-sizing : border-box;
+
+    &:focus{
+        outline: none;
+    }
+}

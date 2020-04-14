@@ -1,0 +1,9 @@
+<h1 class="title">Todo List</h1>
+<app-todo-list [todoList]="todoList$ | async" (todoClicked)="todoClicked($event)"></app-todo-list>
+<p class="text-gray" *ngIf="(todoList$ | async).length==0">Todo List is Empty. Please add new</p>
+<p class="text-gray">Click on the item to mark as completed</p>
+
+<h1 class="title">Completed</h1>
+<app-todo-list [todoList]="completedList$ | async" (todoClicked)="todoClicked($event)"></app-todo-list>
+<p class="text-gray" *ngIf="(completedList$ | async).length==0">Completed List is Empty</p>
+<p class="text-gray">Click on the item to mark as todo</p>
